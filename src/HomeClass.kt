@@ -22,6 +22,7 @@ class HomeClass {
             getGradeFromAge(3)
             printPattern()
             println("Factorial of 5 is ${getFactorial(5)}")
+            showArray(arrayOf(1,2,3,4,5,6,7,8))
         }
     }
 
@@ -71,4 +72,17 @@ fun getFactorial(i: Int) : Int{
     for (j in 1..i)
         fact *= j
     return fact
+}
+
+/**
+ * for loop with array
+ * */
+fun showArray(arr: Array<Int>) {
+    for (a in arr.indices) print(arr[a])
+    println()
+    for (a in arr) print(a)
+    println()
+    for ((index, value) in arr.withIndex())
+        println("the element at $index is $value")
+
 }
