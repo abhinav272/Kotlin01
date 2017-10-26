@@ -42,6 +42,9 @@ class HomeClass {
             gs1.method1()
             gs1.notOverriddingMethod()
 
+            val gs2 = GraduateStudent(name = "Jake")
+            gs2.printGrade(70)
+
         }
     }
 
