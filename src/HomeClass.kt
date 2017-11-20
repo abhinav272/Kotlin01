@@ -45,6 +45,12 @@ class HomeClass {
             val gs2 = GraduateStudent(name = "Jake")
             gs2.printGrade(70)
 
+            val dev1 = Developer("Abhinav", "Kotlin", "BasicTech")
+            val (name, language, organisation) = dev1.getDeveloper()
+            val (name2, language2) = dev1.getDeveloper()
+            println("$name -- $language -- $organisation")
+            println("$name2 -- $language2")
+
         }
     }
 
