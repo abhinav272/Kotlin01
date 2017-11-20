@@ -3,9 +3,9 @@
  */
 class GraduateStudent(name: String) : Student(name) {
 
-    object StudentGrades{
+    object StudentGrades {
         var subMarks = 20
-        fun getAvgMarks(marks : Int) = (marks+ subMarks)/2
+        fun getAvgMarks(marks: Int) = (marks + subMarks) / 2
     }
 
     init {
